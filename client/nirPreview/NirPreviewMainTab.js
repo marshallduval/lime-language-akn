@@ -48,22 +48,23 @@
  * Pdf viewer tab, this tab uses two plugins one for converting content
  * to pdf and the other to show the pdf in the tab
  */
-Ext.define('LIME.ux.at4am.At4amPanel', {
+Ext.define('LIME.ux.nirPreview.NirPreviewMainTab', {
     extend : 'Ext.panel.Panel',
     
-    requires : ['Ext.ux.Iframe'],
-
-    // set the alias
-    alias : 'widget.at4am',
+    config : {
+        pluginName : "nirPreview"
+    },
     
-    cls : 'editorTab',
+    extend : 'Ext.Panel',
+    // set the alias
+    alias : 'widget.nirPreviewMainTab',
 
     // set the layout type
     layout : 'fit',
-    
-    config : {
-        pluginName : "at4am"
-    },
+
+    cls : 'editorTab',
+
+    title : 'NIR Preview',
     
     notEditMode: true,
 
@@ -72,22 +73,19 @@ Ext.define('LIME.ux.at4am.At4amPanel', {
     margin : 0,
     border : 0,
 
-    /**
-     * This function set the url by calling the iframe plugin
-     * this is the only interaction with "iframeplugin" plugin
-     * @param {String} url
-     */
-    setSrc : function(url) {
-        var plugin = this.getPlugin('iframeplugin');
-        plugin.setSrc(url);
-    },
-
-    initComponent : function() {
-        this.plugins = [{
-            ptype : 'iframe',
-            pluginId : 'iframeplugin'
-        }];
-        this.title = Locale.getString("tabTitle", this.getPluginName());
+    items : [{
+        xtype : 'codemirror',
+        grow : true,
+        mode : 'text/html',
+        showModes : false,
+        showAutoIndent : false,
+        showLineNumbers : true,
+        readOnly : true,
+        anchor : '100%'
+    }],
+    
+    initComponent: function(){
+        // this.title = new Ext.Template(Locale.strings.mainPreview).apply({'language': Language.name});
         this.callParent(arguments);
     }
 });
