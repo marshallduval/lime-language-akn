@@ -127,9 +127,14 @@ function addMarkupMenuConfig(filePath, data) {
 }
 
 function getShortLabelsFromConfig(config) {
+    const patterns = new Set(['inline', 'block', 'hcontainer', 'container', 'marker']);
     return Object.keys(config)
         .filter(key => {
-            return config[key].shortLabel || config[key].label;
+            // Exclude labels for the generic elements with class e.g. 'container container'
+            // because these labels will overwrite the label of container elements
+            // such as premble, because the class will be 'container preamble'
+            return !patterns.has(key) &&
+                    (config[key].shortLabel || config[key].label);
         })
         .map(key => {
             var value = config[key].shortLabel || config[key].label;
