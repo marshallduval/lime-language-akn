@@ -1,4 +1,4 @@
-
+@import "mixin";
 // We have no eng lang selector because english is the default one
 #tinymce.lime {
     .mod[data-modtype=insertion] { @include Label('Insertion'); }

@@ -90,9 +90,6 @@ function writeLangsContentCss() {
             const type = folders[0];
             const locale = folders.length === 3 ? folders[1] : '';
             const lang = folders[folders.length-1];
-            // Skip default english because it's included in the main content file
-            if (type === 'default' && lang === 'en') return; 
-
             const sassData = generateSass(type, locale, lang, labels);
             writeCss(folders, renderSass(sassData));
         });
