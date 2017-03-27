@@ -483,6 +483,7 @@
              *[local-name()='embeddedText'] |
              *[local-name()='narrative'] |
              *[local-name()='summery'] |
+             *[local-name()='crossHeading'] |
              *[local-name()='tocItem']">
           <span>
             <xsl:attribute name="class">

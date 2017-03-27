@@ -139,6 +139,10 @@
         "label": "Set cover page",
         "shortLabel": "cover page"
     },
+    "crossHeading": {
+        "label": "Set cross heading",
+        "shortLabel": "cross heading"
+    },
     "date": {
         "label": "Set date",
         "shortLabel": "date"

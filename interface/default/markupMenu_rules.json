@@ -219,7 +219,9 @@
                 "list",
                 "point",
                 "paragraph",
-                "mod"
+                "mod",
+                "rule",
+                "crossHeading"
             ]
         },
         "mod": {
@@ -263,7 +265,9 @@
                 "subclause",
                 "list",
                 "point",
-                "paragraph"
+                "paragraph",
+                "rule",
+                "crossHeading"
             ]
         },
         "collectionBody": {

@@ -122,6 +122,9 @@
     "coverPage": {
         "pattern": "container"
     },
+    "crossHeading": {
+        "pattern": "inline"
+    },
     "date": {
         "pattern": "inline"
     },
