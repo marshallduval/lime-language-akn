@@ -120,7 +120,8 @@
         "list",
         "componentRef",
         "term",
-        "docPurpose"
+        "docPurpose",
+        "crossHeading"
       ]
     },
     "preamble": {
