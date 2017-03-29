@@ -471,6 +471,10 @@
       </xsl:element>
     </xsl:template>
 
+    <!-- Elements to ignore including content-->
+    <xsl:template match="span[@class = 'backLinker']">
+    </xsl:template>
+
   <!-- Elements to ignore -->
     <xsl:template match="   div[contains(@class,'akoma_ntoso')] |
                             div[contains(@class, 'toMarkNode')] |
