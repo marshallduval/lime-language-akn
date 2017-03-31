@@ -525,6 +525,7 @@
             <xsl:apply-templates select="./*[@class = 'FRBRalias']"/>
             <xsl:apply-templates select="./*[@class = 'FRBRdate']"/>
             <xsl:apply-templates select="./*[@class = 'FRBRauthor']"/>
+            <xsl:apply-templates select="./*[@class = 'componentInfo']"/>
             <xsl:apply-templates select="./*[@class = 'FRBRcountry']"/>
 
             <xsl:apply-templates select="./*[not(@class = 'FRBRthis') and
@@ -532,7 +533,24 @@
                                             not(@class = 'FRBRalias') and
                                             not(@class = 'FRBRdate') and
                                             not(@class = 'FRBRauthor')and
+                                            not(@class = 'componentInfo')and
                                             not(@class = 'FRBRcountry')]"/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="div[contains(@class,'meta')]//div[@class = 'references']">
+        <xsl:element name="references">
+            <xsl:apply-templates select="@*" mode="aknPrefixAttributes" />
+            <xsl:apply-templates select="@*[not(name() =  'class')]" mode="notAknPrefixAttributes" />
+            <!-- First docRefs -->
+            <xsl:apply-templates select="./*[@class = 'original']"/>
+            <xsl:apply-templates select="./*[@class = 'passiveRef']"/>
+            <xsl:apply-templates select="./*[@class = 'activeRef']"/>
+            <xsl:apply-templates select="./*[@class = 'jurisprudence']"/>
+            <xsl:apply-templates select="./*[@class = 'hasAttachment']"/>
+            <xsl:apply-templates select="./*[@class = 'attachmentOf']"/>
+            <!-- Then TLCs -->
+            <xsl:apply-templates select="./*[starts-with(@class, 'TLC')]"/>
         </xsl:element>
     </xsl:template>
 
