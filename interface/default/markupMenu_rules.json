@@ -221,6 +221,7 @@
                 "paragraph",
                 "mod",
                 "rule",
+                "blockContainer",
                 "crossHeading"
             ]
         },
@@ -267,6 +268,7 @@
                 "point",
                 "paragraph",
                 "rule",
+                "blockContainer",
                 "crossHeading"
             ]
         },
@@ -370,7 +372,8 @@
                 "affectedDocument",
                 "longTitle",
                 "list",
-                "paragraph"
+                "paragraph",
+                "blockContainer"
             ]
         },
         "preface": {

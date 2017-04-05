@@ -57,6 +57,10 @@
 		}
 	},
 
+	"blockContainer": {
+		"allowedPatterns": ["container", "block", "inline"]
+	},
+
 	"coverPage": {
 		"buttonStyle": "background-color: #74BAAC;",
 		"wrapperStyle": {
@@ -64,6 +68,7 @@
 			"this": "border:1px solid #74BAAC;"
 		}
 	},
+
 
 	"mainBody": {
 		"buttonStyle": "background-color: #74BAAC;",

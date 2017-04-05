@@ -121,6 +121,7 @@
         "componentRef",
         "term",
         "docPurpose",
+        "blockContainer",
         "crossHeading"
       ]
     },
@@ -137,7 +138,8 @@
         "container",
         "block",
         "term",
-        "docPurpose"
+        "docPurpose",
+        "blockContainer"
       ]
     },
     "components": {

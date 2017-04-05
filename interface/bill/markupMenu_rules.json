@@ -25,7 +25,7 @@
 			"children": ["ref", "rref", "mref"]
 		},
 		"preamble": {
-			"children": ["p", "toc", "session", "formula", "recitals", "citations", "affectedDocument", "longTitle"]
+			"children": ["p", "toc", "session", "formula", "recitals", "citations", "affectedDocument", "longTitle", "blockContainer"]
 		}
 	}
 }
