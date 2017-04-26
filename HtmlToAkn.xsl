@@ -255,6 +255,9 @@
                     <xsl:apply-templates select="*/table/following-sibling::node()"/>
                 </p>
             </xsl:when>
+            <xsl:when test="(count(div[contains(@class, 'block')]) > 0) and ./table">
+                <xsl:apply-templates />
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:call-template name="addImplicitP"/>
             </xsl:otherwise>
