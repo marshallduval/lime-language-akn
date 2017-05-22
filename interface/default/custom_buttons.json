@@ -40,6 +40,12 @@
 		}
 	},
 
+	"mmod": {
+		"wrapperElement": "<div>&content;</div>",
+		"allowedPatterns": ["inline"],
+		"exceptionalAllowedElements": ["quotedText","quotedStructure"]
+	},
+
 	"conclusions": {
 		"buttonStyle": "background-color: #74BAAC;",
 		"wrapperStyle": {
