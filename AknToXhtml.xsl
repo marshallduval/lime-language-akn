@@ -215,7 +215,8 @@
   </xsl:template>
 
   <!-- Mod elements -->
-  <xsl:template match="*[local-name()='mod']">
+  <xsl:template match="*[local-name()='mod'] |
+                       *[local-name()='mmod']">
       <div>
             <xsl:attribute name="class">
                <xsl:value-of select="concat('inline ',local-name(.))" />
@@ -455,7 +456,6 @@
              *[local-name()='relatedDocument'] |
              *[local-name()='change'] |
              *[local-name()='inline'] |
-             *[local-name()='mmod'] |
              *[local-name()='rmod'] |
              *[local-name()='remark'] |
              *[local-name()='recorderedTime'] |
