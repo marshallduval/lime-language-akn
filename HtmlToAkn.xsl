@@ -428,13 +428,18 @@
       </xsl:element>
     </xsl:template>
 
+    <xsl:template match="table">
+        <table>
+            <xsl:apply-templates/>
+        </table>
+    </xsl:template>
+
     <xsl:template match="tbody">
         <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="td">
   <xsl:element name="td">
-            <xsl:apply-templates select="@*" mode="aknPrefixAttributes" />
             <xsl:if test="@rowspan">
                 <xsl:attribute name="rowspan"><xsl:value-of select="@rowspan" /></xsl:attribute>
             </xsl:if>
@@ -446,7 +451,7 @@
             </xsl:if>
             <!-- Add p wrapper if we contain only text nodes -->
             <xsl:choose>
-                <xsl:when test="count(div[contains(@class, 'block')])=0">
+                <xsl:when test="count(div[contains(@class, 'block')])=0 and count(p)=0">
                     <xsl:element name="p">
                         <xsl:apply-templates />
                     </xsl:element>
