@@ -209,7 +209,7 @@
     "externalFragment": {
     },
     "embeddedStructure": {
-        "pattern": "container"
+        "pattern": "popup"
     },
     "embeddedText": {
         "pattern": "inline"

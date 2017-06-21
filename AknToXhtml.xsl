@@ -199,7 +199,8 @@
 
   <!-- Popup elements -->
   <xsl:template match="*[local-name()='quotedStructure'] |
-             *[local-name()='authorialNote']">
+             *[local-name()='authorialNote'] |
+             *[local-name()='embeddedStructure']">
       <div>
             <xsl:attribute name="class">
                <xsl:value-of select="concat('popup ',local-name(.))" />
@@ -396,7 +397,6 @@
             *[local-name()='debateBody'] |
             *[local-name()='amendmentBody'] |
             *[local-name()='fragment'] |
-            *[local-name()='embeddedStructure'] |
             *[local-name()='subFlow']
             ">
           <div>
