@@ -116,6 +116,8 @@
         "article",
         "rule",
         "paragraph",
+        "clause",
+        "proviso",
         "alinea",
         "list",
         "componentRef",
