@@ -704,5 +704,8 @@
     },
     "structureNotes": {
         "label": "Notes"
+    },
+    "embeddedElements":{
+        "label": "Embedded elements"
     }
 }
