@@ -522,6 +522,12 @@
                     "attribute": "name"
                 }
             }
+        },
+        "embeddedElements": {
+            "children": [
+                "embeddedText",
+                "embeddedStructure"
+            ]
         }
     }
 }
