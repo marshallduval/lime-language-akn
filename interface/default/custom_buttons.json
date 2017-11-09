@@ -56,6 +56,7 @@
 
 	"preamble": {
 		"buttonStyle": "background-color: #74BAAC;",
+		"exceptionalAllowedElements": ["recitals","citations"],
 		"wrapperStyle": {
 			"before": "background-color: #74BAAC; border-color: #74BAAC;",
 			"this": "border:1px solid #74BAAC; color:#FF6600;",
