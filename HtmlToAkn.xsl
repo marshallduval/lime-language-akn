@@ -240,7 +240,7 @@
                     <xsl:apply-templates select="./table/following-sibling::node()"/>
                 </p>
             </xsl:when>
-            <xsl:when test="count(div[contains(@class, 'block') or contains(@class, 'container')]) = 0">
+            <xsl:when test="count(div[contains(@class, 'block') or contains(@class, 'container') or contains(@class, 'hcontainer')]) = 0">
                 <p>
                     <xsl:apply-templates />
                 </p>
@@ -265,7 +265,7 @@
     </xsl:template>
 
     <xsl:template name="addImplicitP">
-        <xsl:variable name="blocks" select="'|container|block|'"/>
+        <xsl:variable name="blocks" select="'|hcontainer|container|block|'"/>
         <xsl:for-each select="node()">
             <xsl:variable name="prev" select="preceding-sibling::node()[1]"/>
             <xsl:variable name="pattern">

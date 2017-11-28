@@ -160,6 +160,11 @@
 			"wrapperRules": ["addWrapperElement"]
 		}
 	},
+	"citations": {
+		"remove": {
+			"wrapperRules": ["addWrapperElement"]
+		}
+	},
 	"eop": {
 		"wrapperElement": "<span></span>"
 	},
