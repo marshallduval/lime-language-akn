@@ -75,7 +75,7 @@
         "pattern": "container"
     },
     "citations": {
-        "pattern": "hcontainer"
+        "pattern": "container"
     },
     "clause": {
         "pattern": "hcontainer"
@@ -417,7 +417,7 @@
         "pattern": "container"
     },
     "recitals": {
-        "pattern": "hcontainer"
+        "pattern": "container"
     },
     "ref": {
         "pattern": "inline"

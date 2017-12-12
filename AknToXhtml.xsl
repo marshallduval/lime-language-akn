@@ -94,6 +94,8 @@
 
   <!-- Container elements xml-->
   <xsl:template match="*[local-name()='blockList'] |
+               *[local-name()='recitals'] |
+               *[local-name()='citations'] |
                *[local-name()='blockContainer'] |
                *[local-name()='intro'] |
                *[local-name()='wrap'] |
@@ -235,8 +237,6 @@
 
   <!-- Hcontainer elements -->
   <xsl:template match="*[local-name()='clause'] |
-            *[local-name()='recitals'] |
-            *[local-name()='citations'] |
             *[local-name()='item'] |
             *[local-name()='hcontainer'] |
             *[local-name()='rollCall'] |
