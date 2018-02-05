@@ -299,7 +299,8 @@
         </xsl:for-each>
     </xsl:template>
 
-  <xsl:template match="span[contains(@class,'documentRef')]">
+  <xsl:template match="span[contains(@class,'documentRef') or
+                            contains(@class,'componentRef')]">
   <xsl:variable name="aknName">
             <xsl:if test="substring-after(./@class,' ') != ''">
                 <xsl:value-of select="translate(substring-after(./@class,' '),'_','')" />

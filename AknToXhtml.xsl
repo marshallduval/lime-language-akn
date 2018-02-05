@@ -500,14 +500,18 @@
   </xsl:template>
 
   <xsl:template match="*[local-name()='componentRef']">
-    <div>
+    <span>
       <xsl:attribute name="class">
+        <xsl:value-of select="concat('componentRef ',local-name(.))" />
+      </xsl:attribute>
+      <xsl:attribute name="internalid">
         <xsl:value-of select="local-name(.)" />
       </xsl:attribute>
       <!-- UNDEFINED ATTRIBUTE'S GENERIC TEMPLATE -->
       <xsl:apply-templates select="@*" mode="elementAttributes" />
-      <br></br>
-    </div>
+      <xsl:variable name="src" select="@src" />
+      <xsl:value-of select="$src" />
+    </span>
   </xsl:template>
 
   <xsl:template match="*[local-name()='documentRef']">

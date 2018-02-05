@@ -523,6 +523,20 @@
                 }
             }
         },
+        "component": {
+            "askFor": {
+                "doctype": {
+                    "type": "doctype",
+                    "label": "Type",
+                    "attribute": "type"
+                },
+                "docname": {
+                    "type": "text",
+                    "label": "Name",
+                    "attribute": "name"
+                }
+            }
+        },
         "embeddedElements": {
             "children": [
                 "embeddedText",
