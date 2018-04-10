@@ -1,5 +1,5 @@
 {
-    "schemaRegex": "xmlns=\"(http://docs.oasis-open.org/legaldocml/ns/akn/3.0/((?:CSD|WD)\\d+))\"",
+    "schemaRegex": "xmlns=\"(http://docs.oasis-open.org/legaldocml/ns/akn/3.0)\"",
     "formulaName": "enactingFormula",
     "docTypes": [
         {
