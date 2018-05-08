@@ -122,6 +122,29 @@
                 }
             ]
         }, {
+            "name": "debateReport",
+            "locales": [
+                {
+                    "name": "ke"
+                }, {
+                    "name": "uy"
+                }, {
+                    "name": "ch"
+                }, {
+                    "name": "it"
+                }, {
+                    "name": "cl"
+                }, {
+                    "name": "eu"
+                }, {
+                    "name": "uk"
+                }, {
+                    "name": "us"
+                }, {
+                    "name": "za"
+                }
+            ]
+        }, {
             "name": "documentCollection",
             "locales": [
                 {
