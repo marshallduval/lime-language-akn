@@ -34,12 +34,10 @@
     $colorLight: hsl($color, 75%, 97%);
 
     display: inline;
-    padding-right: 5px;
     line-height: 1.5em;
 
     background-color: $colorLight;
     border-radius: 5px;
-    margin: 0 3px;
     border-bottom: 2px solid $colorDark;
 
     &:before {
@@ -53,6 +51,11 @@
         border-radius: 0 5px 0 5px;
         padding: 0 5px 0 5px;
         margin-right: 5px;
+    }
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 5px;
     }
 }
 
