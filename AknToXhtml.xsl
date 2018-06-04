@@ -571,7 +571,6 @@
   </xsl:template>
 
   <xsl:template match="*[local-name()='td'][count(./*)=1]/*[local-name()='p']">
-    <xsl:apply-templates select="@*" mode="undefinedElementAttributes" />
     <xsl:apply-templates />
   </xsl:template>
 
