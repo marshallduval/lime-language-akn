@@ -276,8 +276,8 @@
         "shortLabel": "fragment body"
     },
     "from": {
-        "label": "Set form",
-        "shortLabel": "form"
+        "label": "Set from",
+        "shortLabel": "from"
     },
     "hcontainer": {
         "label": "Set generic hcontainer",
